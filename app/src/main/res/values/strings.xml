@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iOS Launcher</string>
+    <string name="app_library">App Library</string>
+    <string name="search_apps">Search apps</string>
+    <string name="set_default_launcher">Set as default home app</string>
+</resources>

@@ -1,0 +1,24 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+.cxx/
+local.properties
+captures/
+
+# Misc
+.DS_Store
+Thumbs.db
+
+# Keystore (do not commit signing keys)
+*.jks
+*.keystore
+
+# Generated APKs (allow CI uploads, ignore local copies)
+*.apk
+!app/release/*.apk
