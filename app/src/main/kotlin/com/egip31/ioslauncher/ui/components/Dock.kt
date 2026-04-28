@@ -21,6 +21,8 @@ fun Dock(
     apps: List<AppInfo>,
     onLaunchApp: (AppInfo) -> Unit,
     modifier: Modifier = Modifier,
+    onLongClickApp: ((AppInfo) -> Unit)? = null,
+    jiggle: Boolean = false,
 ) {
     Row(
         modifier = modifier
@@ -37,8 +39,10 @@ fun Dock(
             AppIcon(
                 app = app,
                 onClick = { onLaunchApp(app) },
+                onLongClick = onLongClickApp?.let { handler -> { handler(app) } },
                 showLabel = false,
                 iconSize = 56.dp,
+                jiggle = jiggle,
             )
         }
     }
